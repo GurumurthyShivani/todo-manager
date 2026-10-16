@@ -1,5 +1,5 @@
 // Small wrapper around fetch for the REST API.
-const BASE = import.meta.env.VITE_API_URL || "/api";
+const BASE = import.meta.env.VITE_API_URL || "https://todo-manager-backend-d82p.onrender.com/api";
 
 async function request(path, options = {}) {
   const res = await fetch(BASE + path, {
